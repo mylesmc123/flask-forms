@@ -29,7 +29,11 @@ app.config['BOOTSTRAP_SERVE_LOCAL'] = True
 # see the route for "/" and "index.html" to see how this is used
 class NameForm(FlaskForm):
     name = StringField('Local RAS project directory:', validators=[validators.DataRequired()])
-    submit = SubmitField('Submit')
+    name_submit = SubmitField('Submit')
+
+    shp = StringField('RAS Model Boundary Shapefile: \
+        *Note: Extracting a RAS Feature to a Shapefile can be done from RAS Mapper.', validators=[validators.DataRequired()])
+    shp_submit = SubmitField('Submit')
 
 # define functions to be used by the routes (just one here)
 

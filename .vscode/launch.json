@@ -11,6 +11,22 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
-        }
+        },
+
+        {
+            "name": "Python: ras_parser.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--prj",
+                "Z:/Amite/Amite_LWI/Models/Amite_RAS/Amite_2022.prj",
+                "--shp",
+                "Z:/Amite/Amite_LWI/Models/Amite_RAS/Features/OptimizedGeometryBoundary.shp"
+                
+            ],
+        },
     ]
 }
